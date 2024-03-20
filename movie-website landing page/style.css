@@ -269,10 +269,40 @@
 
 /*category-section end*/
 /* upcoming project-section start*/
-.upcoming-project h2 {
+.upcoming-project {
+    padding-top: 30px;
+}
+
+.upcoming-project .title {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.upcoming-project .title h2 {
     font-size: 60px;
     font-weight: 700;
     font-family: "Istok Web", sans-serif;
+}
+
+.title .arrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #111E37;
+    border-radius: 8px;
+    height: 70px;
+    padding: 10px 10px 10px 0;
+}
+
+.left-arrow {
+    padding: 10px;
+}
+
+.right-arrow {
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .movie-container {
@@ -521,7 +551,8 @@
     padding: 15px;
 
 }
-.accordin-card:last-child{
+
+.accordin-card:last-child {
     border-bottom: none;
 }
 
@@ -549,14 +580,17 @@
     border: none !important;
     font-size: 25px;
 }
+
 .accordin-card:first-child .accordin-header button {
     background-color: #FE010B;
 }
+
 .accordin-header .title {
     font-size: 20px;
     font-weight: 400;
     width: calc(100% - 150px);
 }
+
 .accordin-content {
     padding: 10px 10px 10px 100px;
     /* display: none; */
@@ -564,35 +598,49 @@
 
 /*faq-section end*/
 
-    /*footer-section start*/
-.footer-section{
+/*footer-section start*/
+.footer-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-     gap: 30px;
+    gap: 30px;
     padding-top: 80px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #6D6D6D;
 }
-.footer b{
+
+.logo h2 {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    font-family: "Istok Web", sans-serif;
+}
+
+.logo b {
     color: #E22D24;
 }
-.footer h2{
+
+.list-title h2 {
     font-size: 24px;
     font-weight: 700;
-    padding: 10px;
-    font-family:"Istok Web", sans-serif ;
+    padding: 20px;
+    font-family: "Istok Web", sans-serif;
 }
-.footer p{
+
+.item-list li {
     font-size: 20px;
     font-weight: 400;
     padding: 10px;
-  align-items: center;
+    list-style-type: none;
 }
-.footer-bottom p {
+
+.footer-bottom li {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     font-size: 18px;
     font-weight: 400;
-    
+    list-style-type: none;
+
 }
-/*footer-section end*/         
+
+/*footer-section end*/
